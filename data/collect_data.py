@@ -19,7 +19,7 @@ resolver.load_locations()
 
 
 ### Load tweets
-FILE_NAME = 'covid19_vaccine_tweets.csv'
+FILE_NAME = 'covid19_vaccine_tweets_2.csv'
 NUM_TWEETS = 100000
 QUERY = "#CovidVaccine"
 
@@ -31,6 +31,8 @@ with open(FILE_NAME, 'r') as csvfile:
     for row in reader:
         ids.add(row['id'])
 
+print("Currently have: " + str(len(ids)) + " unique ids")
+
 tweets = []
 print("Getting " + str(NUM_TWEETS) + " about " + QUERY + " from Twitter")
 
@@ -40,43 +42,43 @@ with open(FILE_NAME, 'a', newline='') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames)
 
     writer.writeheader()
-    
-    for tweet in tweepy.Cursor(api.search, q=QUERY, lang='en').items(NUM_TWEETS):
+    while len(tweets) < NUM_TWEETS:
         try:
-            location = resolver.resolve_tweet(tweet._json)
+            for tweet in tweepy.Cursor(api.search, q=QUERY, lang='en').items(NUM_TWEETS):
+                location = resolver.resolve_tweet(tweet._json)
 
-            #We don't care about tweets not from the US
-            if location == None or location[1].country != 'United States':
-                print("Found tweet without location data. Dropping")
-                continue
+                #We don't care about tweets not from the US
+                if location == None or location[1].country != 'United States':
+                    print("Found tweet without location data. Dropping")
+                    continue
 
-            tweet_json = tweet._json
+                tweet_json = tweet._json
 
-            if tweet.id in ids:
-                print("Found duplicate tweet. Dropping")
-                continue
+                if tweet.id in ids:
+                    print("Found duplicate tweet. Dropping")
+                    continue
 
-            #We don't care about retweets of people getting vaccines
-            if tweet.text.startswith("RT "):
-                print("Found retweet. Dropping")
-                continue
+                #We don't care about retweets of people getting vaccines
+                if tweet.text.startswith("RT "):
+                    print("Found retweet. Dropping")
+                    continue
 
-            #Replace newlines with serialized form so formatting doesn't get messed up
+                #Replace newlines with serialized form so formatting doesn't get messed up
 
-            tweet.text.replace('\n', '\"\n\"')
-            tweetDict = {
-                'id': tweet.id,
-                'text': tweet.text,
-                'created_at': tweet.created_at,
-                'state': location[1].state if (location[1].state != None and location[1].state != "") else "None",
-                'county': location[1].county if (location[1].county != None and location[1].county != "") else "None",
-                'city': location[1].city if (location[1].city != None  and location[1].city != "") else "None",
-            }
+                tweet.text.replace('\n', '\"\n\"')
+                tweetDict = {
+                    'id': tweet.idstr,
+                    'text': tweet.text,
+                    'created_at': tweet.created_at,
+                    'state': location[1].state if (location[1].state != None and location[1].state != "") else "None",
+                    'county': location[1].county if (location[1].county != None and location[1].county != "") else "None",
+                    'city': location[1].city if (location[1].city != None  and location[1].city != "") else "None",
+                }
 
-            print("Found good tweet. Nice!")
-            tweets.append(tweetDict)
-            ids.add(tweet.id)
-            writer.writerow(tweetDict)
+                print("Found good tweet. Nice!")
+                tweets.append(tweetDict)
+                ids.add(tweet.id)
+                writer.writerow(tweetDict)
         except :
             print("Hit rate limit. Waiting 15 minutes")
             time.sleep(60 * 15)
