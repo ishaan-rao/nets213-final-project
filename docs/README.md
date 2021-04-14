@@ -1,4 +1,6 @@
-# nets213-final-project
+# Tracking Progress of COVID Vaccinations across the United States using Twitter
+## NETS 213 Final Project
+### David Li, Ishaan Rao, Michael Song, Eric Zhang
 
 ### Flow Diagram
 
