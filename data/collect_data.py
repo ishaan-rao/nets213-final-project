@@ -67,7 +67,7 @@ with open(FILE_NAME, 'a', newline='') as csvfile:
 
                 tweet.text.replace('\n', '\"\n\"')
                 tweetDict = {
-                    'id': tweet.idstr,
+                    'id': tweet.id,
                     'text': tweet.text,
                     'created_at': tweet.created_at,
                     'state': location[1].state if (location[1].state != None and location[1].state != "") else "None",
@@ -79,7 +79,7 @@ with open(FILE_NAME, 'a', newline='') as csvfile:
                 tweets.append(tweetDict)
                 ids.add(tweet.id)
                 writer.writerow(tweetDict)
-        except :
+        except tweepy.TweepError:
             print("Hit rate limit. Waiting 15 minutes")
             time.sleep(60 * 15)
             continue
