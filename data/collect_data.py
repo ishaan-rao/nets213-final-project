@@ -2,11 +2,12 @@ import tweepy
 import carmen
 import csv
 import time
+import os 
+import sys 
 
 API_KEY = "YPwLF2rHJxgL0jtEXKuBV1MvY"
 SECRET_KEY = "WG0ZEiXj5kW4u525V4qpGBuvd16MIOEjSfCGm9T9WQQKaW5SPC"
 BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAALZMOgEAAAAAZe9wA48BrsmmeQOONpAZvoI9AHI%3DsZdqYcwt9m69fltycJeCcZL6niDcYlVCf3loMXd6jkv78zW6Oi"
-
 
 ### auth stuff :(
 auth = tweepy.AppAuthHandler(API_KEY, SECRET_KEY)
@@ -18,15 +19,31 @@ resolver = carmen.get_resolver()
 resolver.load_locations()
 
 
+# QUERY = "CovidVaccine"
+# QUERY = "Vaxxed"
+# QUERY = "pfizer"
+# QUERY = "moderna"
+# QUERY = "vaccine"
+
+### Input the query and the run number on the command line
+QUERY = sys.argv[1]
+RUN_NUMBER = sys.argv[2]
+
 ### Load tweets
-FILE_NAME = 'covid19_vaccine_tweets_2.csv'
+FILE_FOOTER = 'covid19_vaccine_tweets'
 NUM_TWEETS = 100000
-QUERY = "#CovidVaccine"
+
+FILE_NAME = QUERY + '_' + FILE_FOOTER + '_' + RUN_NUMBER + ".csv"
+
+
+#If the file doesn't exist, create it
+if not os.path.exists(FILE_NAME):
+    open(FILE_NAME, "w+")
 
 
 ### Load in previous tweet ids so no duplicates
 ids = set()
-with open(FILE_NAME, 'r') as csvfile:
+with open(FILE_NAME, 'r+') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         ids.add(row['id'])
@@ -34,7 +51,7 @@ with open(FILE_NAME, 'r') as csvfile:
 print("Currently have: " + str(len(ids)) + " unique ids")
 
 tweets = []
-print("Getting " + str(NUM_TWEETS) + " about " + QUERY + " from Twitter")
+print("Getting " + str(NUM_TWEETS) + " about #" + QUERY + " from Twitter")
 
 with open(FILE_NAME, 'a', newline='') as csvfile:
     fieldnames = ['id', 'text', 'created_at', 'state', 'county', 'city']
@@ -44,7 +61,7 @@ with open(FILE_NAME, 'a', newline='') as csvfile:
     writer.writeheader()
     while len(tweets) < NUM_TWEETS:
         try:
-            for tweet in tweepy.Cursor(api.search, q=QUERY, lang='en').items(NUM_TWEETS):
+            for tweet in tweepy.Cursor(api.search, q='#' + QUERY, lang='en').items(NUM_TWEETS):
                 location = resolver.resolve_tweet(tweet._json)
 
                 #We don't care about tweets not from the US
