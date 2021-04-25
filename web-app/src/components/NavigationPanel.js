@@ -1,13 +1,6 @@
 import React from "react";
 import {Nav, Navbar} from 'react-bootstrap';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
 class NavigationPanel extends React.Component {
 
   render() {

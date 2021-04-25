@@ -6,18 +6,18 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import NavigationPanel from '../components/NavigationPanel';
 
-class Data extends React.Component {
+/*
+TODO: fill this out with a part explaining our workflow
+*/
 
-
-    render() {
-        return (
-            <div>
-                <NavigationPanel/>
-                <br/>
-                <h1>Data and Methodology</h1>
-            </div>
-        )
-    }
+const Data = () => {
+    return (
+        <div>
+            <NavigationPanel/>
+            <br/>
+            <h1>Data and Methodology</h1>
+        </div>
+    )
 }
 
 

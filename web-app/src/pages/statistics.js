@@ -6,18 +6,18 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import NavigationPanel from '../components/NavigationPanel';
 
-class Statistics extends React.Component {
+/*
+TODO: fill this out explaining some insights we found from this project (probably just display some graphs on R)
+*/
 
-
-    render() {
-        return (
-            <div>
-                <NavigationPanel/>
-                <br/>
-                <h1>Statistics</h1>
-            </div>
-        )
-    }
+const Statistics = () => {
+    return (
+        <div>
+            <NavigationPanel/>
+            <br/>
+            <h1>Statistics</h1>
+        </div>
+    )
 }
 
 

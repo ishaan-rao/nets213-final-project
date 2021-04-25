@@ -1,24 +1,34 @@
 import logo from '../logo.svg';
 import '../App.css';
-import React from "react";
+import React, { useState } from "react";
 import MapChart from "../MapChart";
 // import {Nav, Navbar} from 'react-bootstrap';
 import NavigationPanel from '../components/NavigationPanel';
+import ReactTooltip from "react-tooltip";
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'leaflet/dist/leaflet.css';
-class Home extends React.Component {
 
+/* 
+TODO: 
+    - Maybe include county map?
+    - Include picture of cdc map? Maybe can link directly
+    - Actually hook up data
+*/
+const Home = () => {
+    const [content, setContent] = useState("");
 
-    render() {
-        return (
+    return (
+        <div>
+            <NavigationPanel/>
+            <br/>
             <div>
-                <NavigationPanel/>
-                <br/>
-                <MapChart />
+                <h1>Vaccination Tweets at the State Level</h1>
             </div>
-        )
-    }
+            <MapChart setTooltipContent={setContent} />
+            <ReactTooltip>{content}</ReactTooltip>
+        </div>
+    )
 }
 
 
