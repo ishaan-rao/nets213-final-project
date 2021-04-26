@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import Home from './pages/home';
 import About from './pages/about';
 import Data from './pages/data';

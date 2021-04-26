@@ -1,7 +1,6 @@
-import React, { memo, useState, useEffect} from "react";
+import React, { memo, useState} from "react";
 import { geoCentroid } from "d3-geo";
 import { scaleQuantize } from "d3-scale"
-import {csv} from "d3-fetch"
 import {
   ComposableMap,
   Geographies,
@@ -9,16 +8,16 @@ import {
   Marker,
   Annotation
 } from "react-simple-maps";
-
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
 import allStates from "./data/states.json";
 import stateData from "./data/sample_state_output.json"
-
-import gradient from "./data/gradient.json"
-import ReactTooltip from "react-tooltip";
+import greenGradient from "./gradients/green_gradient.json"
+import redGradient from "./gradients/red_gradient.json"
+import redToGreenGradient from "./gradients/red_to_green_gradient.json"
 //Code adapted from the react-simple-maps tutorial
 const stateUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
-
-
 
 
 const offsets = {
@@ -33,87 +32,142 @@ const offsets = {
   DC: [49, 21]
 };
 
+//Function to write the tooltip
+const generateTooltipContent = (name, state, yes_count, no_count) => {
+    switch (state) {
+        case "yes":
+            return `${name} <br/> Yes: ${yes_count} <br/> No: ${no_count}`
+        case "no":
+            return `${name} <br/> Yes: ${yes_count} <br/> No: ${no_count}`
+        case "diff":
+            return `${name} <br/> Difference: ${yes_count - no_count}`
+        case "percent":
+            return `${name} <br/> Percentage of yes tweets: ${Number.parseFloat(100 * yes_count / (yes_count + no_count)).toPrecision(3)}%`
+        default: 
+            return "error"
+    }
+}
+
+//Function to determine the color for this state
+const generateScaleValue = (name, state, yes_count, no_count) => {
+    switch (state) {
+        case "yes":
+            return yes_count
+        case "no":
+            return no_count 
+        case "diff":
+            return yes_count - no_count 
+        case "percent":
+            return yes_count / (yes_count + no_count)
+        default: 
+            return 0
+    }
+}
 
 //Maybe should change the domain / gradient so there are more colors for the inner ranges and not as many for the outer ranges
-const colorScale = scaleQuantize()
-  .domain([0, 9000])
-  .range(gradient);
+const generateColorScale = (state) => {
+    switch (state) {
+        case "yes":
+            return scaleQuantize().domain([0, 9000]).range(greenGradient);
+        case "no":
+            return scaleQuantize().domain([0, 9000]).range(redGradient);
+        case "diff": 
+            return scaleQuantize().domain([-9000, 9000]).range(redToGreenGradient);
+        case "percent":
+            return scaleQuantize().domain([0, 1]).range(redToGreenGradient);
+    }
+}
 
 
 /*
  TODOs: 
-    - Chloropleth map
-    - Include number of yes/no tweets in tooltip
-        * Maybe include like top 5 counties in terms of yes tweets or something?
+    - Hook up actual data
 */
 const StateMapChart = ({ setTooltipContent }) => {
 
-    return (
-        <ComposableMap data-tip="" projection="geoAlbersUsa">
-        <Geographies geography={stateUrl}>
-            {({ geographies }) => (
-            <>
-                {geographies.map(geo => (
-                <Geography
-                    key={geo.rsmKey}
-                    geography={geo}
-                    onMouseEnter={() => {
-                        const name = geo.properties.name;
-                        setTooltipContent(`${name} \n Yes - ${stateData[name]["yes_count"]} \n No - ${stateData[name]["no_count"]}`);
-                    }}
-                    onMouseLeave={() => {
-                        setTooltipContent("");
-                    }}
-                    stroke="#FFF"
-                    style={{
-                        default: {
-                        fill: colorScale(stateData[geo.properties.name] ? (stateData[geo.properties.name]["yes_count"]) : "#EEE"),
-                        outline: "#000000"
-                        },
-                        hover: {
-                        fill: "#00c202",
-                        outline: "#000000"
-                        },
-                        pressed: {
-                        fill: "#E42",
-                        outline: "#000000"
-                        }
-                    }}
+    const [mapType, setMapType] = useState("yes")
 
-                />
-                ))}
-                {geographies.map(geo => {
-                const centroid = geoCentroid(geo);
-                const cur = allStates.find(s => s.val === geo.id);
-                return (
-                    <g key={geo.rsmKey + "-name"}>
-                    {cur &&
-                        centroid[0] > -160 &&
-                        centroid[0] < -67 &&
-                        (Object.keys(offsets).indexOf(cur.id) === -1 ? (
-                        <Marker coordinates={centroid}>
-                            <text y="2" fontSize={10} textAnchor="middle">
-                            {cur.id}
-                            </text>
-                        </Marker>
-                        ) : (
-                        <Annotation
-                            subject={centroid}
-                            dx={offsets[cur.id][0]}
-                            dy={offsets[cur.id][1]}
-                        >
-                            <text x={4} fontSize={10} alignmentBaseline="middle">
-                            {cur.id}
-                            </text>
-                        </Annotation>
-                        ))}
-                    </g>
-                );
-                })}
-            </>
-            )}
-        </Geographies>
-        </ComposableMap>
+    const [title, setTitle] = useState("Number of yes tweets")
+
+    return (
+        <div>
+            <div>
+            <DropdownButton as={ButtonGroup} title="State Map Type" id="bg-vertical-dropdown-1">
+                <Dropdown.Item onClick={() => {setMapType("yes"); setTitle("Number of yes tweets")}} eventKey="1">Number of yes tweets</Dropdown.Item>
+                <Dropdown.Item onClick={() => {setMapType("no"); setTitle("Number of no tweets")}} eventKey="2">Number of no tweets</Dropdown.Item>
+                <Dropdown.Item onClick={() => {setMapType("diff"); setTitle("Difference of yes and no tweets")}} eventKey="3">Difference of yes and no tweets</Dropdown.Item>
+                <Dropdown.Item onClick={() => {setMapType("percent"); setTitle("Percentage of yes to total")}} eventKey="4">Percentage of yes to total</Dropdown.Item>
+            </DropdownButton>
+            <h2>{title}</h2>
+            </div>
+            
+            <ComposableMap data-tip="" projection="geoAlbersUsa">
+            <Geographies geography={stateUrl}>
+                {({ geographies }) => (
+                <>
+                    {geographies.map(geo => (
+                    <Geography
+                        key={geo.rsmKey}
+                        geography={geo}
+                        onMouseEnter={() => {
+                            const name = geo.properties.name;
+                            setTooltipContent(stateData[geo.properties.name] ? generateTooltipContent(name, mapType, stateData[name]["yes_count"], stateData[name]["no_count"]): `${name} <br/> No data found`);
+                        }}
+                        onMouseLeave={() => {
+                            setTooltipContent("");
+                        }}
+                        stroke="#FFF"
+                        style={{
+                            default: {
+                            fill: stateData[geo.properties.name] ? generateColorScale(mapType)(generateScaleValue(geo.properties.name, mapType, stateData[geo.properties.name]["yes_count"], stateData[geo.properties.name]["no_count"])) : "#EEE",
+                            outline: "#000000"
+                            },
+                            hover: {
+                            fill: "#f5f5f5",
+                            outline: "#000000"
+                            },
+                            pressed: {
+                            fill: "#565656",
+                            outline: "#000000"
+                            }
+                        }}
+
+                    />
+                    ))}
+                    {geographies.map(geo => {
+                    const centroid = geoCentroid(geo);
+                    const cur = allStates.find(s => s.val === geo.id);
+                    return (
+                        <g key={geo.rsmKey + "-name"}>
+                        {cur &&
+                            centroid[0] > -160 &&
+                            centroid[0] < -67 &&
+                            (Object.keys(offsets).indexOf(cur.id) === -1 ? (
+                            <Marker coordinates={centroid}>
+                                <text y="2" fontSize={10} textAnchor="middle">
+                                {cur.id}
+                                </text>
+                            </Marker>
+                            ) : (
+                            <Annotation
+                                subject={centroid}
+                                dx={offsets[cur.id][0]}
+                                dy={offsets[cur.id][1]}
+                            >
+                                <text x={4} fontSize={10} alignmentBaseline="middle">
+                                {cur.id}
+                                </text>
+                            </Annotation>
+                            ))}
+                        </g>
+                    );
+                    })}
+                </>
+                )}
+            </Geographies>
+            </ComposableMap>
+        </div>
     );
+    
 };
 export default memo(StateMapChart);
