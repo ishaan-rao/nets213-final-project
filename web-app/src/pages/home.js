@@ -1,7 +1,8 @@
 import logo from '../logo.svg';
 import '../App.css';
 import React, { useState } from "react";
-import MapChart from "../MapChart";
+import StateMapChart from "../StateMapChart";
+import CountyMapChart from "../CountyMapChart";
 // import {Nav, Navbar} from 'react-bootstrap';
 import NavigationPanel from '../components/NavigationPanel';
 import ReactTooltip from "react-tooltip";
@@ -16,8 +17,8 @@ TODO:
     - Actually hook up data
 */
 const Home = () => {
-    const [content, setContent] = useState("");
-
+    const [stateContent, setStateContent] = useState("");
+    const [countyContent, setCountyContent] = useState("");
     return (
         <div>
             <NavigationPanel/>
@@ -25,8 +26,15 @@ const Home = () => {
             <div>
                 <h1>Vaccination Tweets at the State Level</h1>
             </div>
-            <MapChart setTooltipContent={setContent} />
-            <ReactTooltip>{content}</ReactTooltip>
+            <StateMapChart setTooltipContent={setStateContent} />
+            <ReactTooltip>{stateContent}</ReactTooltip>
+
+
+            <div> 
+                <h1> Vaccination Tweets at the County Level</h1>
+            </div>
+            <CountyMapChart setTooltipContent={setCountyContent} />
+            <ReactTooltip>{countyContent}</ReactTooltip>
         </div>
     )
 }
