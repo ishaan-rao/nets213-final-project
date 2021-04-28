@@ -12,7 +12,7 @@ If none of the tweets indicate that a user received a vaccine, select "No tweets
 ### Important Notes:
 - Select yes regardless of whether a user received their 1st or 2nd dose.
 - It does not matter what brand of vaccine they received (Moderna, Pfizer, J&J, etc.)
-- If a user is tweeting about one of their friends/family receiving the vaccine, you should still select yes.
+- If a user is tweeting about one of their friends/family or another person receiving the vaccine, you should still select yes.
 
 Here are some examples of "yes" tweets and "no" tweets.
 
