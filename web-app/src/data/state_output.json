@@ -1,0 +1,222 @@
+{
+  "Arizona": {
+    "yes_count": 39,
+    "no_count": 40
+  },
+  "Oregon": {
+    "yes_count": 35,
+    "no_count": 35
+  },
+  "Texas": {
+    "yes_count": 121,
+    "no_count": 182
+  },
+  "Washington": {
+    "yes_count": 54,
+    "no_count": 49
+  },
+  "California": {
+    "yes_count": 372,
+    "no_count": 436
+  },
+  "New York": {
+    "yes_count": 171,
+    "no_count": 311
+  },
+  "Indiana": {
+    "yes_count": 22,
+    "no_count": 22
+  },
+  "Minnesota": {
+    "yes_count": 30,
+    "no_count": 26
+  },
+  "Florida": {
+    "yes_count": 107,
+    "no_count": 121
+  },
+  "District Of Columbia": {
+    "yes_count": 76,
+    "no_count": 260
+  },
+  "Colorado": {
+    "yes_count": 36,
+    "no_count": 47
+  },
+  "None": {
+    "yes_count": 170,
+    "no_count": 251
+  },
+  "Massachusetts": {
+    "yes_count": 57,
+    "no_count": 76
+  },
+  "Tennessee": {
+    "yes_count": 42,
+    "no_count": 35
+  },
+  "Virginia": {
+    "yes_count": 58,
+    "no_count": 59
+  },
+  "Hawaii": {
+    "yes_count": 7,
+    "no_count": 7
+  },
+  "Nebraska": {
+    "yes_count": 4,
+    "no_count": 9
+  },
+  "North Carolina": {
+    "yes_count": 39,
+    "no_count": 52
+  },
+  "Connecticut": {
+    "yes_count": 36,
+    "no_count": 46
+  },
+  "Utah": {
+    "yes_count": 17,
+    "no_count": 16
+  },
+  "Illinois": {
+    "yes_count": 65,
+    "no_count": 87
+  },
+  "Ohio": {
+    "yes_count": 82,
+    "no_count": 66
+  },
+  "Pennsylvania": {
+    "yes_count": 75,
+    "no_count": 98
+  },
+  "Maine": {
+    "yes_count": 7,
+    "no_count": 12
+  },
+  "Michigan": {
+    "yes_count": 49,
+    "no_count": 60
+  },
+  "Wisconsin": {
+    "yes_count": 22,
+    "no_count": 20
+  },
+  "Maryland": {
+    "yes_count": 35,
+    "no_count": 62
+  },
+  "Nevada": {
+    "yes_count": 37,
+    "no_count": 26
+  },
+  "New Jersey": {
+    "yes_count": 38,
+    "no_count": 76
+  },
+  "Louisiana": {
+    "yes_count": 20,
+    "no_count": 23
+  },
+  "Rhode Island": {
+    "yes_count": 9,
+    "no_count": 15
+  },
+  "Mississippi": {
+    "yes_count": 5,
+    "no_count": 2
+  },
+  "Georgia": {
+    "yes_count": 52,
+    "no_count": 54
+  },
+  "New Hampshire": {
+    "yes_count": 5,
+    "no_count": 7
+  },
+  "Idaho": {
+    "yes_count": 6,
+    "no_count": 4
+  },
+  "Alabama": {
+    "yes_count": 9,
+    "no_count": 23
+  },
+  "Kentucky": {
+    "yes_count": 18,
+    "no_count": 11
+  },
+  "West Virginia": {
+    "yes_count": 7,
+    "no_count": 10
+  },
+  "South Carolina": {
+    "yes_count": 17,
+    "no_count": 18
+  },
+  "Kansas": {
+    "yes_count": 10,
+    "no_count": 9
+  },
+  "Missouri": {
+    "yes_count": 29,
+    "no_count": 23
+  },
+  "Delaware": {
+    "yes_count": 1,
+    "no_count": 7
+  },
+  "Iowa": {
+    "yes_count": 9,
+    "no_count": 12
+  },
+  "South Dakota": {
+    "yes_count": 2,
+    "no_count": 5
+  },
+  "Alaska": {
+    "yes_count": 0,
+    "no_count": 5
+  },
+  "Oklahoma": {
+    "yes_count": 6,
+    "no_count": 27
+  },
+  "Montana": {
+    "yes_count": 2,
+    "no_count": 2
+  },
+  "Wyoming": {
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "Arkansas": {
+    "yes_count": 6,
+    "no_count": 9
+  },
+  "Vermont": {
+    "yes_count": 4,
+    "no_count": 4
+  },
+  "New Mexico": {
+    "yes_count": 3,
+    "no_count": 6
+  },
+  "North Dakota": {
+    "yes_count": 1,
+    "no_count": 2
+  },
+  "State": {
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "Puerto Rico": {
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "Guam": {
+    "yes_count": 1,
+    "no_count": 0
+  }
+}

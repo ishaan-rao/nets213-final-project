@@ -12,7 +12,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import DropdownButton from 'react-bootstrap/DropdownButton'
 import Dropdown from 'react-bootstrap/Dropdown'
 import allStates from "./data/states.json";
-import stateData from "./data/sample_state_output.json"
+import stateData from "./data/state_output.json"
 import greenGradient from "./gradients/green_gradient.json"
 import redGradient from "./gradients/red_gradient.json"
 import redToGreenGradient from "./gradients/red_to_green_gradient.json"
@@ -68,11 +68,11 @@ const generateScaleValue = (name, state, yes_count, no_count) => {
 const generateColorScale = (state) => {
     switch (state) {
         case "yes":
-            return scaleQuantize().domain([0, 9000]).range(greenGradient);
+            return scaleQuantize().domain([0, 500]).range(greenGradient);
         case "no":
-            return scaleQuantize().domain([0, 9000]).range(redGradient);
+            return scaleQuantize().domain([0, 500]).range(redGradient);
         case "diff": 
-            return scaleQuantize().domain([-9000, 9000]).range(redToGreenGradient);
+            return scaleQuantize().domain([-500, 500]).range(redToGreenGradient);
         case "percent":
             return scaleQuantize().domain([0, 1]).range(redToGreenGradient);
     }

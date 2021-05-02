@@ -16,6 +16,8 @@ import redToGreenGradient from "./gradients/red_to_green_gradient.json"
 //Code adapted from the react-simple-maps tutorial
 const countiesUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
 
+//const countiesUrl = "https://eric.clst.org/assets/wiki/uploads/Stuff/gz_2010_us_050_00_500k.json"
+
 //Function to write the tooltip
 const generateTooltipContent = (name, state, yes_count, no_count) => {
     switch (state) {
