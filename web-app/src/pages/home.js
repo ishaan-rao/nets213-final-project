@@ -12,7 +12,7 @@ import 'leaflet/dist/leaflet.css';
 /* 
 TODO: 
     - Include picture of cdc map? Maybe can link directly
-    - Actually hook up data. Right now its using the same fake data for both the state and county maps
+    - Actually hook up data for county map
 */
 const Home = () => {
     const [stateContent, setStateContent] = useState("");
