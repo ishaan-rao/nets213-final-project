@@ -20,7 +20,7 @@ const About = () => {
             COVID vaccination rates across the country. Using Twitter and Amazon Mechanical Turk, we want to see if we could use crowdsourcing to create a vaccination map 
             that would closely resemble that of the official maps created by reputable news sources (i.e. The New York Times). Given the nature of the data collected,
             we were able to plot maps on both a state level and a county level, though our county data was a little more limited. For each map, a few plotting options
-            are provided for users to choose from. Further details about the process of collection data can be seen on our Data Page.</p>
+            are provided for users to choose from. Further details about the process of our data collection can be seen on our Data Page.</p>
             <br/>
             <p>The majority of this project (i.e. data collection, cleaning, and aggregation) was done in Python, and the website was built using JavaScript and React</p>
         </div>
