@@ -1,0 +1,1167 @@
+{
+  "1017": {
+    "county": "Chambers",
+    "yes_count": 0,
+    "no_count": 2
+  },
+  "1043": {
+    "county": "Cullman",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "1073": {
+    "county": "Jefferson",
+    "yes_count": 1,
+    "no_count": 6
+  },
+  "1089": {
+    "county": "Madison",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "1097": {
+    "county": "Mobile",
+    "yes_count": 1,
+    "no_count": 3
+  },
+  "2020": {
+    "county": "Anchorage",
+    "yes_count": 0,
+    "no_count": 4
+  },
+  "4013": {
+    "county": "Maricopa",
+    "yes_count": 16,
+    "no_count": 14
+  },
+  "4019": {
+    "county": "Pima",
+    "yes_count": 6,
+    "no_count": 3
+  },
+  "5007": {
+    "county": "Benton",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "5093": {
+    "county": "Mississippi",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "5143": {
+    "county": "Washington",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "6001": {
+    "county": "Alameda",
+    "yes_count": 10,
+    "no_count": 13
+  },
+  "6019": {
+    "county": "Fresno",
+    "yes_count": 1,
+    "no_count": 4
+  },
+  "6023": {
+    "county": "Humboldt",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "6037": {
+    "county": "Los Angeles",
+    "yes_count": 122,
+    "no_count": 118
+  },
+  "6041": {
+    "county": "Marin",
+    "yes_count": 1,
+    "no_count": 2
+  },
+  "6053": {
+    "county": "Monterey",
+    "yes_count": 1,
+    "no_count": 2
+  },
+  "6059": {
+    "county": "Orange",
+    "yes_count": 5,
+    "no_count": 10
+  },
+  "6065": {
+    "county": "Riverside",
+    "yes_count": 0,
+    "no_count": 18
+  },
+  "6067": {
+    "county": "Sacramento",
+    "yes_count": 3,
+    "no_count": 11
+  },
+  "6071": {
+    "county": "San Bernardino",
+    "yes_count": 2,
+    "no_count": 2
+  },
+  "6073": {
+    "county": "San Diego",
+    "yes_count": 30,
+    "no_count": 26
+  },
+  "6079": {
+    "county": "San Luis Obispo",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "6081": {
+    "county": "San Mateo",
+    "yes_count": 18,
+    "no_count": 44
+  },
+  "6083": {
+    "county": "Santa Barbara",
+    "yes_count": 0,
+    "no_count": 4
+  },
+  "6085": {
+    "county": "Santa Clara",
+    "yes_count": 11,
+    "no_count": 15
+  },
+  "6087": {
+    "county": "Santa Cruz",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "6097": {
+    "county": "Sonoma",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "6111": {
+    "county": "Ventura",
+    "yes_count": 2,
+    "no_count": 0
+  },
+  "8005": {
+    "county": "Arapahoe",
+    "yes_count": 2,
+    "no_count": 2
+  },
+  "8013": {
+    "county": "Boulder",
+    "yes_count": 2,
+    "no_count": 3
+  },
+  "8014": {
+    "county": "Broomfield",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "8031": {
+    "county": "Denver",
+    "yes_count": 20,
+    "no_count": 19
+  },
+  "8041": {
+    "county": "El Paso",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "8059": {
+    "county": "Jefferson",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "9001": {
+    "county": "Fairfield",
+    "yes_count": 4,
+    "no_count": 9
+  },
+  "9003": {
+    "county": "Hartford",
+    "yes_count": 2,
+    "no_count": 3
+  },
+  "9007": {
+    "county": "Middlesex",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "9009": {
+    "county": "New Haven",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "9013": {
+    "county": "Tolland",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "10003": {
+    "county": "New Castle",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "11001": {
+    "county": "District of Columbia",
+    "yes_count": 76,
+    "no_count": 259
+  },
+  "12009": {
+    "county": "Brevard",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "12011": {
+    "county": "Broward",
+    "yes_count": 8,
+    "no_count": 12
+  },
+  "12031": {
+    "county": "Duval",
+    "yes_count": 3,
+    "no_count": 3
+  },
+  "12057": {
+    "county": "Hillsborough",
+    "yes_count": 11,
+    "no_count": 8
+  },
+  "12071": {
+    "county": "Lee",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "12086": {
+    "county": "Miami-Dade",
+    "yes_count": 8,
+    "no_count": 13
+  },
+  "12095": {
+    "county": "Orange",
+    "yes_count": 10,
+    "no_count": 6
+  },
+  "12099": {
+    "county": "Palm Beach",
+    "yes_count": 4,
+    "no_count": 5
+  },
+  "12103": {
+    "county": "Pinellas",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "12127": {
+    "county": "Volusia",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "13031": {
+    "county": "Bulloch",
+    "yes_count": 2,
+    "no_count": 0
+  },
+  "13051": {
+    "county": "Chatham",
+    "yes_count": 1,
+    "no_count": 2
+  },
+  "13059": {
+    "county": "Clarke",
+    "yes_count": 4,
+    "no_count": 1
+  },
+  "13089": {
+    "county": "De Kalb",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "13121": {
+    "county": "Fulton",
+    "yes_count": 23,
+    "no_count": 30
+  },
+  "13185": {
+    "county": "Lowndes",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "13225": {
+    "county": "Peach",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "13245": {
+    "county": "Richmond",
+    "yes_count": 1,
+    "no_count": 2
+  },
+  "16001": {
+    "county": "Ada",
+    "yes_count": 2,
+    "no_count": 2
+  },
+  "16087": {
+    "county": "Washington",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "17019": {
+    "county": "Champaign",
+    "yes_count": 3,
+    "no_count": 1
+  },
+  "17031": {
+    "county": "Cook",
+    "yes_count": 44,
+    "no_count": 56
+  },
+  "17035": {
+    "county": "Cumberland",
+    "yes_count": 1,
+    "no_count": 5
+  },
+  "17077": {
+    "county": "Jackson",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "17093": {
+    "county": "Kendall",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "17113": {
+    "county": "Mclean",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "17165": {
+    "county": "Saline",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "17197": {
+    "county": "Will",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "18003": {
+    "county": "Allen",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "18057": {
+    "county": "Hamilton",
+    "yes_count": 2,
+    "no_count": 3
+  },
+  "18097": {
+    "county": "Marion",
+    "yes_count": 3,
+    "no_count": 4
+  },
+  "19103": {
+    "county": "Johnson",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "19113": {
+    "county": "Linn",
+    "yes_count": 2,
+    "no_count": 0
+  },
+  "19153": {
+    "county": "Polk",
+    "yes_count": 3,
+    "no_count": 4
+  },
+  "19157": {
+    "county": "Poweshiek",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "20091": {
+    "county": "Johnson",
+    "yes_count": 2,
+    "no_count": 3
+  },
+  "20173": {
+    "county": "Sedgwick",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "20209": {
+    "county": "Wyandotte",
+    "yes_count": 2,
+    "no_count": 2
+  },
+  "21111": {
+    "county": "Jefferson",
+    "yes_count": 13,
+    "no_count": 3
+  },
+  "21117": {
+    "county": "Kenton",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "21169": {
+    "county": "Metcalfe",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "22017": {
+    "county": "Caddo",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "22033": {
+    "county": "East Baton Rouge",
+    "yes_count": 6,
+    "no_count": 2
+  },
+  "22071": {
+    "county": "Orleans",
+    "yes_count": 7,
+    "no_count": 7
+  },
+  "23001": {
+    "county": "Androscoggin",
+    "yes_count": 0,
+    "no_count": 2
+  },
+  "23005": {
+    "county": "Cumberland",
+    "yes_count": 3,
+    "no_count": 1
+  },
+  "24003": {
+    "county": "Anne Arundel",
+    "yes_count": 5,
+    "no_count": 0
+  },
+  "24005": {
+    "county": "Baltimore",
+    "yes_count": 8,
+    "no_count": 17
+  },
+  "24031": {
+    "county": "Montgomery",
+    "yes_count": 2,
+    "no_count": 15
+  },
+  "24033": {
+    "county": "Prince Georges",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "25013": {
+    "county": "Hampden",
+    "yes_count": 0,
+    "no_count": 2
+  },
+  "25017": {
+    "county": "Middlesex",
+    "yes_count": 2,
+    "no_count": 9
+  },
+  "25021": {
+    "county": "Norfolk",
+    "yes_count": 4,
+    "no_count": 2
+  },
+  "25025": {
+    "county": "Suffolk",
+    "yes_count": 30,
+    "no_count": 29
+  },
+  "25027": {
+    "county": "Worcester",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "26055": {
+    "county": "Grand Traverse",
+    "yes_count": 0,
+    "no_count": 3
+  },
+  "26077": {
+    "county": "Kalamazoo",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "26081": {
+    "county": "Kent",
+    "yes_count": 3,
+    "no_count": 0
+  },
+  "26125": {
+    "county": "Oakland",
+    "yes_count": 0,
+    "no_count": 8
+  },
+  "26161": {
+    "county": "Washtenaw",
+    "yes_count": 1,
+    "no_count": 3
+  },
+  "26163": {
+    "county": "Wayne",
+    "yes_count": 8,
+    "no_count": 11
+  },
+  "27013": {
+    "county": "Blue Earth",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "27053": {
+    "county": "Hennepin",
+    "yes_count": 6,
+    "no_count": 11
+  },
+  "27137": {
+    "county": "St Louis",
+    "yes_count": 13,
+    "no_count": 4
+  },
+  "27169": {
+    "county": "Winona",
+    "yes_count": 0,
+    "no_count": 3
+  },
+  "28049": {
+    "county": "Hinds",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "28059": {
+    "county": "Jackson",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "28071": {
+    "county": "Lafayette",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "29051": {
+    "county": "Cole",
+    "yes_count": 0,
+    "no_count": 5
+  },
+  "29077": {
+    "county": "Greene",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "29095": {
+    "county": "Jackson",
+    "yes_count": 6,
+    "no_count": 7
+  },
+  "30031": {
+    "county": "Gallatin",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "31055": {
+    "county": "Douglas",
+    "yes_count": 3,
+    "no_count": 4
+  },
+  "32003": {
+    "county": "Clark",
+    "yes_count": 28,
+    "no_count": 18
+  },
+  "32031": {
+    "county": "Washoe",
+    "yes_count": 5,
+    "no_count": 3
+  },
+  "33011": {
+    "county": "Hillsborough",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "33015": {
+    "county": "Rockingham",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "33017": {
+    "county": "Strafford",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "34009": {
+    "county": "Cape May",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "34013": {
+    "county": "Essex",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "34017": {
+    "county": "Hudson",
+    "yes_count": 2,
+    "no_count": 3
+  },
+  "34023": {
+    "county": "Middlesex",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "34025": {
+    "county": "Monmouth",
+    "yes_count": 1,
+    "no_count": 4
+  },
+  "34027": {
+    "county": "Morris",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "34035": {
+    "county": "Somerset",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "34037": {
+    "county": "Sussex",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "36001": {
+    "county": "Albany",
+    "yes_count": 2,
+    "no_count": 8
+  },
+  "36005": {
+    "county": "Bronx",
+    "yes_count": 8,
+    "no_count": 4
+  },
+  "36029": {
+    "county": "Erie",
+    "yes_count": 6,
+    "no_count": 7
+  },
+  "36047": {
+    "county": "Kings",
+    "yes_count": 23,
+    "no_count": 21
+  },
+  "36055": {
+    "county": "Monroe",
+    "yes_count": 3,
+    "no_count": 7
+  },
+  "36059": {
+    "county": "Nassau",
+    "yes_count": 1,
+    "no_count": 5
+  },
+  "36061": {
+    "county": "New York",
+    "yes_count": 50,
+    "no_count": 123
+  },
+  "36063": {
+    "county": "Niagara",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "36065": {
+    "county": "Oneida",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "36067": {
+    "county": "Onondaga",
+    "yes_count": 3,
+    "no_count": 4
+  },
+  "36081": {
+    "county": "Queens",
+    "yes_count": 13,
+    "no_count": 5
+  },
+  "36085": {
+    "county": "Richmond",
+    "yes_count": 1,
+    "no_count": 4
+  },
+  "36091": {
+    "county": "Saratoga",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "36103": {
+    "county": "Suffolk",
+    "yes_count": 0,
+    "no_count": 2
+  },
+  "36109": {
+    "county": "Tompkins",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "36111": {
+    "county": "Ulster",
+    "yes_count": 0,
+    "no_count": 2
+  },
+  "36119": {
+    "county": "Westchester",
+    "yes_count": 2,
+    "no_count": 4
+  },
+  "37021": {
+    "county": "Buncombe",
+    "yes_count": 4,
+    "no_count": 1
+  },
+  "37051": {
+    "county": "Cumberland",
+    "yes_count": 2,
+    "no_count": 0
+  },
+  "37063": {
+    "county": "Durham",
+    "yes_count": 4,
+    "no_count": 4
+  },
+  "37067": {
+    "county": "Forsyth",
+    "yes_count": 2,
+    "no_count": 2
+  },
+  "37119": {
+    "county": "Mecklenburg",
+    "yes_count": 4,
+    "no_count": 17
+  },
+  "37135": {
+    "county": "Orange",
+    "yes_count": 0,
+    "no_count": 4
+  },
+  "37147": {
+    "county": "Pitt",
+    "yes_count": 0,
+    "no_count": 3
+  },
+  "37183": {
+    "county": "Wake",
+    "yes_count": 7,
+    "no_count": 9
+  },
+  "39035": {
+    "county": "Cuyahoga",
+    "yes_count": 14,
+    "no_count": 14
+  },
+  "39049": {
+    "county": "Franklin",
+    "yes_count": 13,
+    "no_count": 6
+  },
+  "39061": {
+    "county": "Hamilton",
+    "yes_count": 7,
+    "no_count": 11
+  },
+  "39081": {
+    "county": "Jefferson",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "39099": {
+    "county": "Mahoning",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "39151": {
+    "county": "Stark",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "39153": {
+    "county": "Summit",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "40123": {
+    "county": "Pontotoc",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "41005": {
+    "county": "Clackamas",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "41029": {
+    "county": "Jackson",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "41039": {
+    "county": "Lane",
+    "yes_count": 3,
+    "no_count": 3
+  },
+  "41043": {
+    "county": "Linn",
+    "yes_count": 1,
+    "no_count": 3
+  },
+  "41051": {
+    "county": "Multnomah",
+    "yes_count": 13,
+    "no_count": 8
+  },
+  "42003": {
+    "county": "Allegheny",
+    "yes_count": 8,
+    "no_count": 13
+  },
+  "42013": {
+    "county": "Blair",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "42017": {
+    "county": "Bucks",
+    "yes_count": 0,
+    "no_count": 2
+  },
+  "42027": {
+    "county": "Centre",
+    "yes_count": 2,
+    "no_count": 2
+  },
+  "42043": {
+    "county": "Dauphin",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "42095": {
+    "county": "Northampton",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "42101": {
+    "county": "Philadelphia",
+    "yes_count": 20,
+    "no_count": 27
+  },
+  "44003": {
+    "county": "Kent",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "44005": {
+    "county": "Newport",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "44007": {
+    "county": "Providence",
+    "yes_count": 4,
+    "no_count": 5
+  },
+  "45013": {
+    "county": "Beaufort",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "45019": {
+    "county": "Charleston",
+    "yes_count": 1,
+    "no_count": 4
+  },
+  "45045": {
+    "county": "Greenville",
+    "yes_count": 2,
+    "no_count": 4
+  },
+  "45091": {
+    "county": "York",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "47037": {
+    "county": "Davidson",
+    "yes_count": 17,
+    "no_count": 10
+  },
+  "47065": {
+    "county": "Hamilton",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "47093": {
+    "county": "Knox",
+    "yes_count": 3,
+    "no_count": 2
+  },
+  "47125": {
+    "county": "Montgomery",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "47145": {
+    "county": "Roane",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "47149": {
+    "county": "Rutherford",
+    "yes_count": 0,
+    "no_count": 2
+  },
+  "47157": {
+    "county": "Shelby",
+    "yes_count": 2,
+    "no_count": 12
+  },
+  "47163": {
+    "county": "Sullivan",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "47179": {
+    "county": "Washington",
+    "yes_count": 3,
+    "no_count": 0
+  },
+  "47187": {
+    "county": "Williamson",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "48005": {
+    "county": "Angelina",
+    "yes_count": 3,
+    "no_count": 21
+  },
+  "48029": {
+    "county": "Bexar",
+    "yes_count": 6,
+    "no_count": 7
+  },
+  "48085": {
+    "county": "Collin",
+    "yes_count": 7,
+    "no_count": 4
+  },
+  "48113": {
+    "county": "Dallas",
+    "yes_count": 18,
+    "no_count": 17
+  },
+  "48121": {
+    "county": "Denton",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "48141": {
+    "county": "El Paso",
+    "yes_count": 1,
+    "no_count": 4
+  },
+  "48201": {
+    "county": "Harris",
+    "yes_count": 24,
+    "no_count": 35
+  },
+  "48215": {
+    "county": "Hidalgo",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "48309": {
+    "county": "McLennan",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "48339": {
+    "county": "Montgomery",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "48355": {
+    "county": "Nueces",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "48375": {
+    "county": "Potter",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "48423": {
+    "county": "Smith",
+    "yes_count": 1,
+    "no_count": 2
+  },
+  "48439": {
+    "county": "Tarrant",
+    "yes_count": 4,
+    "no_count": 5
+  },
+  "48453": {
+    "county": "Travis",
+    "yes_count": 23,
+    "no_count": 29
+  },
+  "48479": {
+    "county": "Webb",
+    "yes_count": 0,
+    "no_count": 3
+  },
+  "48491": {
+    "county": "Williamson",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "49035": {
+    "county": "Salt Lake",
+    "yes_count": 9,
+    "no_count": 9
+  },
+  "49043": {
+    "county": "Summit",
+    "yes_count": 3,
+    "no_count": 0
+  },
+  "50007": {
+    "county": "Chittenden",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "51003": {
+    "county": "Albemarle",
+    "yes_count": 2,
+    "no_count": 2
+  },
+  "51013": {
+    "county": "Arlington",
+    "yes_count": 7,
+    "no_count": 4
+  },
+  "51059": {
+    "county": "Fairfax",
+    "yes_count": 1,
+    "no_count": 6
+  },
+  "51107": {
+    "county": "Loudoun",
+    "yes_count": 1,
+    "no_count": 1
+  },
+  "51159": {
+    "county": "Richmond",
+    "yes_count": 2,
+    "no_count": 6
+  },
+  "51161": {
+    "county": "Roanoke",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "51510": {
+    "county": "Alexandria City",
+    "yes_count": 4,
+    "no_count": 0
+  },
+  "51550": {
+    "county": "Chesapeake City",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "51610": {
+    "county": "Falls Church City",
+    "yes_count": 2,
+    "no_count": 4
+  },
+  "51630": {
+    "county": "Fredericksburg City",
+    "yes_count": 3,
+    "no_count": 3
+  },
+  "51800": {
+    "county": "Suffolk City",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "51810": {
+    "county": "Virginia Beach City",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "53033": {
+    "county": "King",
+    "yes_count": 30,
+    "no_count": 33
+  },
+  "53063": {
+    "county": "Spokane",
+    "yes_count": 2,
+    "no_count": 1
+  },
+  "53067": {
+    "county": "Thurston",
+    "yes_count": 8,
+    "no_count": 5
+  },
+  "54061": {
+    "county": "Monongalia",
+    "yes_count": 0,
+    "no_count": 2
+  },
+  "55009": {
+    "county": "Brown",
+    "yes_count": 0,
+    "no_count": 1
+  },
+  "55025": {
+    "county": "Dane",
+    "yes_count": 3,
+    "no_count": 6
+  },
+  "55031": {
+    "county": "Douglas",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "55079": {
+    "county": "Milwaukee",
+    "yes_count": 3,
+    "no_count": 3
+  },
+  "55103": {
+    "county": "Richland",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "55133": {
+    "county": "Waukesha",
+    "yes_count": 1,
+    "no_count": 0
+  },
+  "56021": {
+    "county": "Laramie",
+    "yes_count": 0,
+    "no_count": 1
+  }
+}
