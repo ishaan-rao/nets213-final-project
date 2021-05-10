@@ -23,14 +23,15 @@ const Data = () => {
                 <br/>
                 <p>
                     We queried several different hashtags such as "#CovidVaccine", "#Vaxxed", "#Pfizer", "#Moderna", "#vaccine", to get tweets and ended with 
-                    around ten thousand tweets. 
+                    around ten thousand tweets after this intial collection phase. 
                 </p>
             <h2>Amazon Mechanical Turk</h2>
                 <p>
                     In order to actually ensure that the tweets we were counting would be about getting the covid vaccine we used 
                     Amazon Mechanical Turk, an online crowdsourcing platform, to classify the tweets. To ensure quality answers, we included 
                     gold standard questions (i.e. tweets which we knew were or were not about getting the Covid vaccine) to filter out workers
-                    who were just randomly clicking. Additionally, each tweet was reviewed three times and the majority label was taken 
+                    who were just randomly clicking or did not understand the goal of the task we were assigning. Additionally, each tweet was 
+                    reviewed three times and the majority label was taken. 
                 </p>
             <h2>Data Aggregation</h2>
                 <p>

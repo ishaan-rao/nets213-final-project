@@ -68,11 +68,11 @@ const generateScaleValue = (name, state, yes_count, no_count) => {
 const generateColorScale = (state) => {
     switch (state) {
         case "yes":
-            return scaleQuantize().domain([0, 500]).range(greenGradient);
+            return scaleQuantize().domain([0, 100]).range(greenGradient);
         case "no":
-            return scaleQuantize().domain([0, 500]).range(redGradient);
+            return scaleQuantize().domain([0, 100]).range(redGradient);
         case "diff": 
-            return scaleQuantize().domain([-500, 500]).range(redToGreenGradient);
+            return scaleQuantize().domain([-100, 100]).range(redToGreenGradient);
         case "percent":
             return scaleQuantize().domain([0, 1]).range(redToGreenGradient);
     }

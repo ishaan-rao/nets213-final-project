@@ -9,7 +9,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import DropdownButton from 'react-bootstrap/DropdownButton'
 import Dropdown from 'react-bootstrap/Dropdown'
 
-import countyData from "./data/sample_state_output.json"
+import countyData from "./data/county_data.json"
 import greenGradient from "./gradients/green_gradient.json"
 import redGradient from "./gradients/red_gradient.json"
 import redToGreenGradient from "./gradients/red_to_green_gradient.json"
@@ -54,21 +54,17 @@ const generateScaleValue = (name, state, yes_count, no_count) => {
 const generateColorScale = (state) => {
     switch (state) {
         case "yes":
-            return scaleQuantize().domain([0, 9000]).range(greenGradient);
+            return scaleQuantize().domain([0, 10]).range(greenGradient);
         case "no":
-            return scaleQuantize().domain([0, 9000]).range(redGradient);
+            return scaleQuantize().domain([0, 10]).range(redGradient);
         case "diff": 
-            return scaleQuantize().domain([-9000, 9000]).range(redToGreenGradient);
+            return scaleQuantize().domain([-10, 10]).range(redToGreenGradient);
         case "percent":
             return scaleQuantize().domain([0, 1]).range(redToGreenGradient);
     }
 }
 
 
-/*
- TODOs: 
-    - Hook up actual data
-*/
 const CountyMapChart = ({ setTooltipContent }) => {
 
     const [mapType, setMapType] = useState("yes")
@@ -96,8 +92,9 @@ const CountyMapChart = ({ setTooltipContent }) => {
                         key={geo.rsmKey}
                         geography={geo}
                         onMouseEnter={() => {
-                            const name = geo.properties.name;
-                            setTooltipContent(countyData[geo.properties.name] ? generateTooltipContent(name, mapType, countyData[name]["yes_count"], countyData[name]["no_count"]) : `${name} <br/> No data found`);
+                            const fips = "" + parseInt(geo.id, 10);
+                            const obj = countyData[fips]
+                            setTooltipContent(countyData[fips] ? generateTooltipContent(obj["county"], mapType, obj["yes_count"], obj["no_count"]) : `No data found`);
                         }}
                         onMouseLeave={() => {
                             setTooltipContent("");
@@ -105,7 +102,7 @@ const CountyMapChart = ({ setTooltipContent }) => {
                         stroke="#FFF"
                         style={{
                             default: {
-                            fill: countyData[geo.properties.name] ? generateColorScale(mapType)(generateScaleValue(geo.properties.name, mapType, countyData[geo.properties.name]["yes_count"], countyData[geo.properties.name]["no_count"])) : "#EEE",
+                            fill: countyData["" + parseInt(geo.id, 10)] ? generateColorScale(mapType)(generateScaleValue(countyData["" + parseInt(geo.id, 10)]["county"], mapType, countyData["" + parseInt(geo.id, 10)]["yes_count"], countyData["" + parseInt(geo.id, 10)]["no_count"])) : "#EEE",
                             outline: "#000000"
                             },
                             hover: {
