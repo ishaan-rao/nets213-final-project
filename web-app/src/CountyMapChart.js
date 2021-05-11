@@ -13,8 +13,12 @@ import countyData from "./data/county_data.json"
 import greenGradient from "./gradients/green_gradient.json"
 import redGradient from "./gradients/red_gradient.json"
 import redToGreenGradient from "./gradients/red_to_green_gradient.json"
+
+import "./styles/main.css";
+
 //Code adapted from the react-simple-maps tutorial
 const countiesUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
+
 
 //const countiesUrl = "https://eric.clst.org/assets/wiki/uploads/Stuff/gz_2010_us_050_00_500k.json"
 
@@ -69,18 +73,21 @@ const CountyMapChart = ({ setTooltipContent }) => {
 
     const [mapType, setMapType] = useState("yes")
 
-    const [title, setTitle] = useState("Number of yes tweets")
+    const [title, setTitle] = useState("Number of Yes Tweets")
 
     return (
         <div>
-            <div>
-            <DropdownButton as={ButtonGroup} title="State Map Type" id="bg-vertical-dropdown-1">
-                <Dropdown.Item onClick={() => {setMapType("yes"); setTitle("Number of yes tweets")}} eventKey="1">Number of yes tweets</Dropdown.Item>
-                <Dropdown.Item onClick={() => {setMapType("no"); setTitle("Number of no tweets")}} eventKey="2">Number of no tweets</Dropdown.Item>
-                <Dropdown.Item onClick={() => {setMapType("diff"); setTitle("Difference of yes and no tweets")}} eventKey="3">Difference of yes and no tweets</Dropdown.Item>
-                <Dropdown.Item onClick={() => {setMapType("percent"); setTitle("Percentage of yes to total")}} eventKey="4">Percentage of yes to total</Dropdown.Item>
-            </DropdownButton>
-            <h2>{title}</h2>
+            <div className="title" id="t">
+                <h4>{title}</h4>
+            </div>
+
+            <div className="title">
+                <DropdownButton as={ButtonGroup} title="State Map Type" id="bg-vertical-dropdown-1">
+                    <Dropdown.Item onClick={() => {setMapType("yes"); setTitle("Number of Yes Tweets")}} eventKey="1">Number of Yes Tweets</Dropdown.Item>
+                    <Dropdown.Item onClick={() => {setMapType("no"); setTitle("Number of No Tweets")}} eventKey="2">Number of No Tweets</Dropdown.Item>
+                    <Dropdown.Item onClick={() => {setMapType("diff"); setTitle("Difference of Yes and No Tweets")}} eventKey="3">Difference of Yes and No Tweets</Dropdown.Item>
+                    <Dropdown.Item onClick={() => {setMapType("percent"); setTitle("Percentage of Yes Tweets to Total Tweets")}} eventKey="4">Percentage of Yes Tweets to Total Tweets</Dropdown.Item>
+                </DropdownButton>
             </div>
             
             <ComposableMap data-tip="" projection="geoAlbersUsa">

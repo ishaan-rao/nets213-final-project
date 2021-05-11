@@ -1,3 +1,11 @@
 .cont {
     margin: 20px;
 }
+
+.title {
+    display: inline-block;
+}
+
+#t {
+    margin-right: 650px;
+}

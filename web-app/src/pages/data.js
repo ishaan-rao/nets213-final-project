@@ -43,7 +43,7 @@ const Data = () => {
                 <p>
                     Lastly, we had each tweet reviewed by three MTurk workers, and we used a simple vote majority vote to determine the final classification. After filtering out those who failed the gold standard questions, we had roughly 5,000 tweets left as data points. 
                     Using the Carmen API, we were able to identify the state and county of these tweets. We then conducted an analysis that compared our findings to the actual vaccination progress in the United States (according to the official CDC data). Our results can be
-                    found on the home page, and our analysis can be found on the analysis page. We utilized React to create this application and allow users to interactively view our findings.
+                    found on the <a href="/home">Home Page</a>, and our analysis can be found on the <a href="/statistics">Analysis Page</a>. We utilized React to create this application and allow users to interactively view our findings.
                 </p>
                 <img width="700" src="cdc.jpeg"></img>
             </div>
