@@ -34,7 +34,7 @@ const Data = () => {
                 <img width="700" src="mturk.png"></img>
                 <h4>Quality Control</h4>
                 <p>
-                    To ensure quality answers, we included positive and negativegold standard questions (i.e. tweets which we already knew were or were not about 
+                    To ensure quality answers, we included positive and negative gold standard questions (i.e. tweets which we already knew were or were not about 
                     getting the vaccine). This was included to filter out workers who were just randomly clicking or did not understand the goal of the task 
                     we were assigning, ensuring that the data we collected was of the highest quality. We ignored all responses from workers who did not correctly identify 
                     the gold standard questions.
