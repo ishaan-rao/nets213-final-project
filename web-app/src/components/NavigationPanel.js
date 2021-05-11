@@ -10,7 +10,7 @@ class NavigationPanel extends React.Component {
           <Nav className="mr-auto">
             <Nav.Link href="home">Home</Nav.Link>
             <Nav.Link href="data">Data and Methodology</Nav.Link>
-            <Nav.Link href="statistics">Statistics</Nav.Link>
+            <Nav.Link href="statistics">Analysis</Nav.Link>
             <Nav.Link href="about">About</Nav.Link>
           </Nav>
       </Navbar>
